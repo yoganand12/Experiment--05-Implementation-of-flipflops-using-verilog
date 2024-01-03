@@ -1,9 +1,12 @@
-# Experiment--05-Implementation-of-flipflops-using-verilog
-### AIM: To implement all the flipflops using verilog and validating their functionality using their functional tables
-### HARDWARE REQUIRED:  – PC, Cyclone II , USB flasher
-### SOFTWARE REQUIRED:   Quartus prime
+## Ex:05 Implementation of flipflops using verilog
+### AIM:
+To implement all the flipflops using verilog and validating their functionality using their functional tables
+### HARDWARE REQUIRED:  
+PC, Cyclone II , USB flasher
+### SOFTWARE REQUIRED:  
+Quartus prime
 ### THEORY 
-SR Flip-Flop
+## SR Flip-Flop:
 SR flip-flop operates with only positive clock transitions or negative clock transitions. Whereas, SR latch operates with enable signal. The circuit diagram of SR flip-flop is shown in the following figure.
 
 ![image](https://user-images.githubusercontent.com/36288975/167910294-bb550548-b1dc-4cba-9044-31d9037d476b.png)
@@ -31,7 +34,7 @@ The maximum possible groupings of adjacent ones are already shown in the figure.
 Q(t+1)=S+R′Q(t)Q(t+1)=S+R′Q(t)
 
 
-### D Flip-Flop
+### D Flip-Flop:
 D flip-flop operates with only positive clock transitions or negative clock transitions. Whereas, D latch operates with enable signal. That means, the output of D flip-flop is insensitive to the changes in the input, D except for active transition of the clock signal. The circuit diagram of D flip-flop is shown in the following figure.
  
 This circuit has single input D and two outputs Qtt & Qtt’. The operation of D flip-flop is similar to D Latch. But, this flip-flop affects the outputs only when positive transition of the clock signal is applied instead of active enable.
@@ -52,7 +55,7 @@ Qt+1t+1 = D
 Next state of D flip-flop is always equal to data input, D for every positive transition of the clock signal. Hence, D flip-flops can be used in registers, shift registers and some of the counters.
 
 
-### JK Flip-Flop
+### JK Flip-Flop:
 JK flip-flop is the modified version of SR flip-flop. It operates with only positive clock transitions or negative clock transitions. The circuit diagram of JK flip-flop is shown in the following figure.
 ![image](https://user-images.githubusercontent.com/36288975/167910378-d2d984a7-2815-4d17-8c41-ee4bdf59ec24.png) 
 
@@ -79,7 +82,7 @@ Q(t+1)=JQ(t)′+K′Q(t)Q(t+1)=JQ(t)′+K′Q(t)
 
 
 
-### T Flip-Flop
+### T Flip-Flop:
 T flip-flop is the simplified version of JK flip-flop. It is obtained by connecting the same input ‘T’ to both inputs of JK flip-flop. It operates with only positive clock transitions or negative clock transitions. The circuit diagram of T flip-flop is shown in the following figure.
 
 ![image](https://user-images.githubusercontent.com/36288975/167911534-5f3c445d-bc68-46e2-9a9c-7efce5febc60.png)
@@ -100,41 +103,69 @@ Inputs	Present State	Next State
 From the above characteristic table, we can directly write the next state equation as
 Q(t+1)=T′Q(t)+TQ(t)′
 ⇒Q(t+1)=T⊕Q(t)
-
-### Procedure
-/* write all the steps invloved */
+### PROGRAM:
 
 
+## SR Flip-Flop:
+![Screenshot 2024-01-03 215203](https://github.com/yoganand12/Experiment--05-Implementation-of-flipflops-using-verilog/assets/155515519/a57bccba-5f00-48d6-9e19-733c345a6945)
 
-### PROGRAM 
-/*
+### D Flip-Flop:
+
+![Screenshot 2024-01-03 215212](https://github.com/yoganand12/Experiment--05-Implementation-of-flipflops-using-verilog/assets/155515519/343268a1-1648-4cc1-b0ed-40f3276e0746)
+
+
+### JK Flip-Flop:
+
+![Screenshot 2024-01-03 215220](https://github.com/yoganand12/Experiment--05-Implementation-of-flipflops-using-verilog/assets/155515519/2314851e-1d44-4598-9dc0-d072aac7a27e)
+
+
+### T Flip-Flop:
+
+![Screenshot 2024-01-03 215228](https://github.com/yoganand12/Experiment--05-Implementation-of-flipflops-using-verilog/assets/155515519/026d0627-bf6f-4a33-8134-2600d75bc16d)
+
+
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
 Developed by: 
-RegisterNumber:  
-*/
-
-
-
-
-
-
 ### RTL LOGIC FOR FLIPFLOPS 
 
+## SR Flip-Flop:
+
+![Screenshot 2024-01-03 215338](https://github.com/yoganand12/Experiment--05-Implementation-of-flipflops-using-verilog/assets/155515519/429ac82c-d780-485b-9f55-e2bf5c102034)
+
+### D Flip-Flop:
+
+![Screenshot 2024-01-03 221052](https://github.com/yoganand12/Experiment--05-Implementation-of-flipflops-using-verilog/assets/155515519/aeea94d2-76d9-4ca2-81bd-afcff9b36b36)
+
+### JK Flip-Flop:
+
+![Screenshot 2024-01-03 215351](https://github.com/yoganand12/Experiment--05-Implementation-of-flipflops-using-verilog/assets/155515519/5d5e492e-0be8-4a61-8bc9-64250cf3e3da)
 
 
+### T Flip-Flop:
 
-
-
-
+![Screenshot 2024-01-03 215358](https://github.com/yoganand12/Experiment--05-Implementation-of-flipflops-using-verilog/assets/155515519/bc329c93-5fa8-4562-880e-3d775e3cfdf2)
 
 
 ### TIMING DIGRAMS FOR FLIP FLOPS 
 
+## SR Flip-Flop:
+
+![Screenshot 2024-01-03 215442](https://github.com/yoganand12/Experiment--05-Implementation-of-flipflops-using-verilog/assets/155515519/08ed7ced-4ae3-40b8-aceb-65126c51f6b7)
+
+### D Flip-Flop:
+
+![Screenshot 2024-01-03 220042](https://github.com/yoganand12/Experiment--05-Implementation-of-flipflops-using-verilog/assets/155515519/192dc414-242d-4272-92d4-2fa1c01189d9)
 
 
+### JK Flip-Flop:
+
+![Screenshot 2024-01-03 215454](https://github.com/yoganand12/Experiment--05-Implementation-of-flipflops-using-verilog/assets/155515519/22dae855-5995-49bb-b2a1-306ce6acc9f6)
 
 
+### T Flip-Flop:
+
+![Screenshot 2024-01-03 215504](https://github.com/yoganand12/Experiment--05-Implementation-of-flipflops-using-verilog/assets/155515519/20247d40-62cc-44aa-8250-d2a71f2e1195)
 
 
-
-### RESULTS 
+### RESULTS:
+By this we have verified the truth table of JK- Flip-Flop ,SR- Flip-Flop,D - Flip-Flop,T Flip-Flop using verilog.
